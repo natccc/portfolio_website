@@ -1,11 +1,21 @@
-import React from 'react'
-
-function Header() {
+import Image from "next/image";
+import Intro from "@/components/intro";
+import SectionDivider from "@/components/section-divider";
+import About from "@/components/about";
+import Projects from "@/components/projects";
+import Skills from "@/components/skills";
+import Experience from "@/components/experience";
+import Contact from "@/components/contact";
+export default function Home() {
   return (
-    <header className='z-[999] relative'>
-      <div className='fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full '></div>
-    </header>
-  )
+    <main className="flex flex-col items-center px-4">
+      <Intro />
+      <SectionDivider />
+      <About />
+      <Projects />
+      <Skills />
+      <Experience />
+      <Contact/>
+    </main>
+  );
 }
-
-export default Header
