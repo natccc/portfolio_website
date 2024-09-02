@@ -10,6 +10,8 @@ export default function Project({
   title,
   description,
   tags,
+  github,
+  live,
   imageUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -23,14 +25,30 @@ export default function Project({
     <motion.div
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
-      className=" group mb-3 sm:mb-8 last:mb-0 "
+      className=" group mb-5 sm:mb-12 last:mb-0 overflow-hidden"
     >
-      <section className="hover:bg-gray-200 transition  relative bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 sm:h-[20rem] sm:group-even:pl-8 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+      <section className="hover:bg-gray-200 transition  relative bg-gray-100 max-w-[60rem] border border-black/5 rounded-lg  sm:pr-8  sm:group-even:pl-8 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white ">
+        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 md:max-w-[50%] flex flex-col h-full md:group-even:ml-[28rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
+          <div className="flex gap-4 mt-4 ">
+           {live && <a
+              className="linkButton"
+              href={github}
+              target="_blank"
+            >
+              View it here
+            </a>} 
+            <a
+              className="linkButton"
+              href={github}
+              target="_blank"
+            >
+              View Github Repo
+            </a>
+          </div>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
@@ -42,15 +60,17 @@ export default function Project({
             ))}
           </ul>{" "}
         </div>
-        <Image
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 
+        <div className=" w-30">
+          <Image
+            className="absolute hidden md:block top-3 -right-2  md:w-[20rem] lg:w-[28rem] rounded-lg shadow-2xl group-even:right-[initial] group-even:-left-2
         group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 transition group-hover:scale-[1.04]
             
-        group-even:group-hover:translate-x-3  group-even:group-hover:translate-y-3  group-even:group-hover:rotate-2"
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-        ></Image>
+        group-even:group-hover:translate-x-3  group-even:group-hover:translate-y-3  group-even:group-hover:rotate-2 "
+            src={imageUrl}
+            alt="Project I worked on"
+            quality={95}
+          ></Image>
+        </div>
       </section>
     </motion.div>
   );

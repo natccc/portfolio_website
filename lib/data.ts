@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import ncNewsWeb from "@/public/ncnewsweb.png";
+import ncNewsApi2 from "@/public/ncnewsapi2.png";
+import doggo from "@/public/doggo3.png";
 
 export const links = [
   {
@@ -35,52 +35,50 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Trainee Software Developer",
+    location: "Northcoders",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "During the 13-week software engineering bootcamp, I gained expertise in full-stack web and mobile application development using JavaScript, with a focus on industry best practices like Test-Driven Development (TDD), Agile methodologies (Daily Stand-Ups, Kanban), version control with Git/GitHub, and pair programming for collaborative problem-solving.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Mar 2024 - Jun 2024",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Physiotherapist",
+    location: "Hospital Authority, Hong Kong",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Developed and implemented personalized treatment plans for patients across five hospital settings, utilizing strong problem-solving skills to diagnose and address complex cases. I also communicated effectively with a diverse range of individuals, including patients and their relatives, doctors, nurses and colleagues, honing my ability to collaborate, adapt, and convey complex information clearly.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2018 - 2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "NC News Web",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A Reddit-inspired social news aggregation platform designed with accessibility in mind. It offers users an intuitive and inclusive interface to interact seamlessly with the NC News API, enabling them to browse, post, and engage with articles and comments.",
+    github: "https://github.com/natccc/be-news_api",
+    live: "https://fe-nc-news.vercel.app/",
+    tags: ["React", "Tailwind"],
+    imageUrl: ncNewsWeb,
   },
   {
-    title: "rmtDev",
+    title: "NC News API",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "This RESTful API provides comprehensive CRUD functionality for managing news content. Users can access, post, update, and delete news articles and comments. Additionally, the API supports updating vote counts on articles, as well as a 'login' feature for personalized interactions.",
+    github: "https://github.com/natccc/fe-nc-news",
+    live:"",
+    tags: ["Node.JS", "Express", "PostgreSQL"],
+    imageUrl: ncNewsApi2,
   },
   {
-    title: "Word Analytics",
+    title: "Doggo",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A travel planning app for dog owners, providing detailed information on dog-friendly accommodations, places to visit, and airline policies. Users can browse listings, save trips, and add reviews. Accommodation listings are user-generated, while other place details are sourced from the Google Places API.",
+    github: "https://github.com/natccc/doggo",
+    live:"",
+    tags: ["React Native (Expo)", "Supabase"],
+    imageUrl: doggo,
   },
 ] as const;
 
@@ -92,16 +90,11 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "React Native",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Jest"
 ] as const;
