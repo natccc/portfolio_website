@@ -21,7 +21,7 @@ export default function About() {
       <div className="flex md:flex-row flex-col gap-20 items-center">
         <div className="shadow-md rounded-lg">
           <Image
-            src="/portrait.png"
+            src="/portrait1.png"
             alt="portrait"
             width={250}
             height={250}
@@ -45,9 +45,9 @@ export default function About() {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M12 2l1.09 4.26L17 9.27l-3.91 2.71L13.09 16.5 12 12.5 10.91 16.5l-.18-4.52L7 9.27l3.91-2.71L12 2z"
                 />
               </svg>
@@ -60,9 +60,9 @@ export default function About() {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M12 2l1.09 4.26L17 9.27l-3.91 2.71L13.09 16.5 12 12.5 10.91 16.5l-.18-4.52L7 9.27l3.91-2.71L12 2z"
                 />
               </svg>
@@ -74,8 +74,6 @@ export default function About() {
             and can't wait to bring my unique background and enthusiasm to an
             exciting project.
           </p>
-
-          
         </div>
       </div>
     </motion.section>
