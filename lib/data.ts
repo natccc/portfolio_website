@@ -1,6 +1,5 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import ncNewsWeb from "@/public/ncnewsweb.png";
 import ncNewsApi2 from "@/public/ncnewsapi2.png";
