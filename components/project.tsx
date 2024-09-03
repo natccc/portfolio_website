@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useScroll, useTransform } from "framer-motion";
 import { projectsData } from "@/lib/data";
 import { motion } from "framer-motion";
+import { FaCode , FaEye} from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 export default function Project({
@@ -25,28 +26,26 @@ export default function Project({
     <motion.div
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
-      className=" group mb-5 sm:mb-12 last:mb-0 overflow-hidden"
+      className=" group mb-5 sm:mb-12 last:mb-0 overflow-hidden mx-2 "
     >
-      <section className="hover:bg-gray-200 transition  relative bg-gray-100 max-w-[60rem] border border-black/5 rounded-lg  sm:pr-8  sm:group-even:pl-8 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white ">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 md:max-w-[50%] flex flex-col h-full md:group-even:ml-[28rem]">
+      <section className="hover:bg-gray-200 transition  relative bg-gray-100 max-w-[60rem] border border-black/5 rounded-lg  sm:pr-8  md:group-even:pl-0 lg:group-even:pl-16 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white ">
+        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 md:max-w-[50%] flex flex-col h-full md:group-even:ml-[26rem] w-full">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
-          <div className="flex gap-4 mt-4 ">
-           {live && <a
-              className="linkButton"
-              href={github}
-              target="_blank"
-            >
-              View it here
-            </a>} 
-            <a
-              className="linkButton"
-              href={github}
-              target="_blank"
-            >
-              View Github Repo
+          
+          <div className="flex gap-4 mt-4 mb-2">
+            {live && (
+              <a className="linkButton flex gap-2 font-semibold" href={live} target="_blank">
+                <FaEye className="opacity-70"/>
+                Live Demo
+              </a>
+            )}
+            <a className="linkButton flex gap-2 group font-semibold" href={github} target="_blank">
+              <FaCode className="opacity-70" />
+              Code
+             
             </a>
           </div>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
@@ -62,7 +61,7 @@ export default function Project({
         </div>
         <div className=" w-30">
           <Image
-            className="absolute hidden md:block top-3 -right-2  md:w-[20rem] lg:w-[28rem] rounded-lg shadow-2xl group-even:right-[initial] group-even:-left-2
+            className="absolute hidden md:block top-3 -right-2  md:w-[24rem] lg:w-[28rem] rounded-lg shadow-2xl group-even:right-[initial] group-even:-left-2
         group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 transition group-hover:scale-[1.04]
             
         group-even:group-hover:translate-x-3  group-even:group-hover:translate-y-3  group-even:group-hover:rotate-2 "

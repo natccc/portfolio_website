@@ -38,7 +38,7 @@ export const experiencesData = [
     title: "Trainee Software Developer",
     location: "Northcoders",
     description:
-      "During the 13-week software engineering bootcamp, I gained expertise in full-stack web and mobile application development using JavaScript, with a focus on industry best practices like Test-Driven Development (TDD), Agile methodologies (Daily Stand-Ups, Kanban), version control with Git/GitHub, and pair programming for collaborative problem-solving.",
+      "During the 13-week software engineering bootcamp, I gained experience in full-stack development using JavaScript, with a focus on industry best practices like Test-Driven Development (TDD), Agile methodologies, version control with Git/GitHub, and pair programming for collaborative problem-solving.",
     icon: React.createElement(LuGraduationCap),
     date: "Mar 2024 - Jun 2024",
   },
@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Physiotherapist",
     location: "Hospital Authority, Hong Kong",
     description:
-      "Developed and implemented personalized treatment plans for patients across five hospital settings, utilizing strong problem-solving skills to diagnose and address complex cases. I also communicated effectively with a diverse range of individuals, including patients and their relatives, doctors, nurses and colleagues, honing my ability to collaborate, adapt, and convey complex information clearly.",
+      "I developed and implemented personalized treatment plans for patients across five hospital settings, utilizing strong problem-solving skills to diagnose and address complex cases. I also communicated effectively with a diverse range of population, including patients (and their relatives), doctors, nurses and colleagues, honing my ability to collaborate, adapt, and convey complex information clearly.",
     icon: React.createElement(CgWorkAlt),
     date: "2018 - 2023",
   },
@@ -56,18 +56,18 @@ export const projectsData = [
   {
     title: "NC News Web",
     description:
-      "A Reddit-inspired social news aggregation platform designed with accessibility in mind. It offers users an intuitive and inclusive interface to interact seamlessly with the NC News API, enabling them to browse, post, and engage with articles and comments.",
+      "A Reddit-like social news aggregation platform. It offers an intuitive interface to interact seamlessly with the NC News API, enabling users to browse, post, and engage with articles and comments.",
     github: "https://github.com/natccc/be-news_api",
-    live: "https://fe-nc-news.vercel.app/",
-    tags: ["React", "Tailwind"],
+    live: "https://natalie-nc-news.netlify.app/",
+    tags: ["React", "TailwindCSS", "TailWindUI"],
     imageUrl: ncNewsWeb,
   },
   {
     title: "NC News API",
     description:
-      "This RESTful API provides comprehensive CRUD functionality for managing news content. Users can access, post, update, and delete news articles and comments. Additionally, the API supports updating vote counts on articles, as well as a 'login' feature for personalized interactions.",
+      "This RESTful API provides comprehensive CRUD functionality for managing news content. Users can access, post, update, and delete news articles and comments. Additionally, the API supports updating vote counts on articles.",
     github: "https://github.com/natccc/fe-nc-news",
-    live:"",
+    live: "",
     tags: ["Node.JS", "Express", "PostgreSQL"],
     imageUrl: ncNewsApi2,
   },
@@ -76,7 +76,7 @@ export const projectsData = [
     description:
       "A travel planning app for dog owners, providing detailed information on dog-friendly accommodations, places to visit, and airline policies. Users can browse listings, save trips, and add reviews. Accommodation listings are user-generated, while other place details are sourced from the Google Places API.",
     github: "https://github.com/natccc/doggo",
-    live:"",
+    live: "",
     tags: ["React Native (Expo)", "Supabase"],
     imageUrl: doggo,
   },
