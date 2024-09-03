@@ -56,7 +56,7 @@ export const projectsData = [
     title: "NC News Web",
     description:
       "A Reddit-like social news aggregation platform. It offers an intuitive interface to interact seamlessly with the NC News API, enabling users to browse, post, and engage with articles and comments.",
-    github: "https://github.com/natccc/be-news_api",
+    github: "https://github.com/natccc/fe-nc-news",
     live: "https://natalie-nc-news.netlify.app/",
     tags: ["React", "TailwindCSS", "TailWindUI"],
     imageUrl: ncNewsWeb,
@@ -65,7 +65,7 @@ export const projectsData = [
     title: "NC News API",
     description:
       "This RESTful API provides comprehensive CRUD functionality for managing news content. Users can access, post, update, and delete news articles and comments. Additionally, the API supports updating vote counts on articles.",
-    github: "https://github.com/natccc/fe-nc-news",
+    github: "https://github.com/natccc/be-news_api",
     live: "",
     tags: ["Node.JS", "Express", "PostgreSQL"],
     imageUrl: ncNewsApi2,
