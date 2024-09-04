@@ -12,23 +12,6 @@ export const BackgroundGradientAnimation = ({
   fourthColor = "255, 245, 230", // Soft pastel peach
   fifthColor = "240, 240, 240", // Very light pastel grey
   pointerColor = "220, 204, 255", // Soft pastel purple
-
-  // firstColor = "189, 228, 255", // Pastel blue
-  // secondColor = "255, 204, 229", // Pastel pink
-  // thirdColor = "204, 255, 255", // Pastel cyan
-  // fourthColor = "255, 204, 204", // Pastel coral/red
-  // fifthColor = "255, 255, 204", // Pastel yellow
-  // pointerColor = "230, 204, 255", // Pastel lavender
-
-  // firstColor = "173, 216, 230", // Pastel blue
-  // secondColor = "255, 182, 193", // Pastel pink
-  // thirdColor = "176, 224, 230", // Pastel cyan
-  // fourthColor = "255, 160, 122", // Pastel coral
-  // fifthColor = "250, 250, 210", // Pastel yellow
-  // pointerColor = "216, 191, 216", // Pastel lavender
-
-
-
   size = "80%",
   blendingValue = "hard-light",
   children,
@@ -58,63 +41,7 @@ export const BackgroundGradientAnimation = ({
   const [tgX, setTgX] = useState(0);
   const [tgY, setTgY] = useState(0);
 
-const {theme} = useTheme()
-
-   useEffect(() => {
-     // Set colors for dark or light mode
-    // document.body.style.setProperty(
-    //   "--gradient-background-start",
-    //   theme === "dark" ? "#1a1a1a" : gradientBackgroundStart // Dark background for dark mode
-    // );
-    // document.body.style.setProperty(
-    //   "--gradient-background-end",
-    //   theme === "dark" ? "#333333" : gradientBackgroundEnd // Darker background for dark mode
-    // );
-     document.body.style.setProperty(
-       "--first-color",
-       theme==='dark' ? "110, 80, 140" : firstColor // Darker purple for dark mode
-     );
-     document.body.style.setProperty(
-       "--second-color",
-       theme==='dark' ? "150, 60, 100" : secondColor // Darker pink for dark mode
-     );
-     document.body.style.setProperty(
-       "--third-color",
-       theme==='dark' ? "90, 90, 120" : thirdColor // Darker blue for dark mode
-     );
-     document.body.style.setProperty(
-       "--fourth-color",
-       theme==='dark' ? "120, 50, 50" : fourthColor // Darker peach for dark mode
-     );
-     document.body.style.setProperty(
-       "--fifth-color",
-       theme==='dark' ? "100, 100, 100" : fifthColor // Darker grey for dark mode
-     );
-     document.body.style.setProperty(
-       "--pointer-color",
-       theme==='dark' ? "180, 160, 255" : pointerColor // Pointer color for dark mode
-     );
-     document.body.style.setProperty("--size", size);
-     document.body.style.setProperty("--blending-value", blendingValue);
-   }, [
-     theme==='dark',
-     gradientBackgroundStart,
-     gradientBackgroundEnd,
-     firstColor,
-     secondColor,
-     thirdColor,
-     fourthColor,
-     fifthColor,
-     pointerColor,
-     size,
-     blendingValue,
-   ]);
-  
-  
-  
-
-
-
+  const { theme } = useTheme();
 
   useEffect(() => {
     document.body.style.setProperty(
@@ -125,15 +52,33 @@ const {theme} = useTheme()
       "--gradient-background-end",
       gradientBackgroundEnd
     );
-    document.body.style.setProperty("--first-color", firstColor);
-    document.body.style.setProperty("--second-color", secondColor);
-    document.body.style.setProperty("--third-color", thirdColor);
-    document.body.style.setProperty("--fourth-color", fourthColor);
-    document.body.style.setProperty("--fifth-color", fifthColor);
-    document.body.style.setProperty("--pointer-color", pointerColor);
+    document.body.style.setProperty(
+      "--first-color",
+      theme === "dark" ? "110, 80, 140" : firstColor
+    );
+    document.body.style.setProperty(
+      "--second-color",
+      theme === "dark" ? "150, 60, 100" : secondColor
+    );
+    document.body.style.setProperty(
+      "--third-color",
+      theme === "dark" ? "90, 90, 120" : thirdColor
+    );
+    document.body.style.setProperty(
+      "--fourth-color",
+      theme === "dark" ? "120, 50, 50" : fourthColor
+    );
+    document.body.style.setProperty(
+      "--fifth-color",
+      theme === "dark" ? "100, 100, 100" : fifthColor
+    );
+    document.body.style.setProperty(
+      "--pointer-color",
+      theme === "dark" ? "180, 160, 255" : pointerColor
+    );
     document.body.style.setProperty("--size", size);
     document.body.style.setProperty("--blending-value", blendingValue);
-  }, []);
+  }, [theme]);
 
   useEffect(() => {
     function move() {
