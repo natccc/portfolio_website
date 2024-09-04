@@ -35,7 +35,7 @@ export default function Hero() {
           <h3 className="mx-3 md:mx-0 font-medium capitalize text-3xl sm:text-3xl bg-gradient-to-r dark:from-indigo-200 dark:to-pink-500 from-indigo-400 to-pink-500  md:mt-3  bg-clip-text text-transparent tracking-tight">
             Software Developer
           </h3>
-          <TextEffect className=" text-lg md:text-2xl mt-1 md:mt-9 text-gray-600 dark:text-white/90">
+          <TextEffect className=" text-lg md:text-2xl mt-1 md:mt-9 pr-6 text-gray-600 dark:text-white/90">
             I'm passionate about building user friendly web applications.
           </TextEffect>
 
@@ -70,7 +70,7 @@ export default function Hero() {
 
             <div className="flex md:gap-4 items-center gap-8 justify-center mt-3 md:mt-0">
               <a
-                className=" bg-white p-3 md-p-4 text-gray-700 flex items-center rounded-full text-[1.6rem] focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                className=" bg-white p-3 md:p-4 text-gray-700 flex items-center rounded-full text-[1.6rem] focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
                 href="https://www.linkedin.com/in/nataliechc/"
                 target="_blank"
               >
