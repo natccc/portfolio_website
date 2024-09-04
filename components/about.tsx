@@ -11,10 +11,11 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 leading-8 sm:mb-40 scroll-mt-28 flex flex-col px-2 text-lg"
+      className="mt-20 md:mt-0 mb-28 leading-8 sm:mb-40 scroll-mt-28 flex flex-col px-2 text-lg"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
+      viewport={{ once: true }}
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
