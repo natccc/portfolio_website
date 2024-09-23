@@ -12,8 +12,8 @@ import { BackgroundGradientAnimation } from "@/components/ui/background-gradient
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Natalie | Personal Portfolio",
-  description: "Natalie is a full-stack developer",
+  title: "Natalie Chan",
+  description: "Natalie Chan is a full-stack developer in UK.",
 };
 
 export default function RootLayout({
